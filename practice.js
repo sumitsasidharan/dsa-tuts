@@ -1,15 +1,15 @@
 function anagram(str1, str2) {
    if (str1.length !== str2.length) {
-      console.log('Unequal Length...')
+      console.log('Unequal Length...');
       return;
    }
 
-   let obj = {}
+   let obj = {};
    for (let i = 0; i < str1.length; i++) {
       let letter = str1[i];
-      obj[letter] ? obj[letter] += 1 : obj[letter] = 1;
+      obj[letter] ? (obj[letter] += 1) : (obj[letter] = 1);
    }
-   console.log('after 1st loop: ', obj)
+   console.log('after 1st loop: ', obj);
 
    for (let i = 0; i < str2.length; i++) {
       let letter = str2[i];
@@ -23,6 +23,5 @@ function anagram(str1, str2) {
    return true;
 }
 
-
-const result = anagram('ponnu', 'nonpu')
-console.log(result)
+const result = anagram('ponnu', 'nonpu');
+console.log(result);
