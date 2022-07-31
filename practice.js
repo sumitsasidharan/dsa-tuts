@@ -23,5 +23,19 @@ function anagram(str1, str2) {
    return true;
 }
 
-const result = anagram('ponnu', 'nonpu');
-console.log(result);
+// const result = anagram('ponnu', 'nonpu');
+// console.log(result);
+
+
+// Recursive function
+function countDown(num) {
+   if (num <= 0) {
+      console.log("All Done!");
+      return;
+   }
+   console.log(num);
+   num--;
+   countDown(num);
+}
+
+countDown(5);
