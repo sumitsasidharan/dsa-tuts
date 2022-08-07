@@ -35,7 +35,7 @@ function ratSpiderGhost() {
 }
 
 
-
+// Solution 3
 function fizzbuzz2(n) {
    let x = 0;
    let y = 0;
@@ -51,6 +51,13 @@ function fizzbuzz2(n) {
 }
 
 // fizzbuzz2(15);
+
+// Solution 4
+// for (let i = 1; i < 101;) console.log((i++ % 3 ? '' : 'fizz') + (i % 5 ? '' : 'buzz') || i)
+function fizzbuzz4() {
+   for (let i = 1; i < 101; )
+      console.log((i++ % 3 ? '' : 'fizz') + (i % 5 ? '' : 'buzz') || i);
+}
 
 // check which numbers can be divided by both 3 and 5
 function divide3n5(n) {
