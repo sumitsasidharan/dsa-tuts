@@ -38,4 +38,7 @@
    4. check if the objects character counts are equal.
    5. return true
 
-   
+## 9. URLify algorithm
+   ####  ALGORITHM:
+   1. Loop through the string until you find white space, replace with '%20'.
+   2. Check to see if string last element is white space convert string to array, join with '%20'.
