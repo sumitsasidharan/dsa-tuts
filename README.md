@@ -6,12 +6,12 @@ Companion repo to [The Coding Inteview Bootcamp: Algorithms + Data Structures](h
 
 ### Steps for Debugging
 
-1. To debug a file or run debugger, add a 'debugger' statement in your function.
-2. Call the function manually.
-3. At the terminal, run `node inspect filename.js`.
-4. To continue execution of the file, press 'c' then 'enter'.
-5. To laungh a 'repl' session, type 'repl' and <enter>. You can type variable names or code to debug.
-6. To exit the 'repl', press control + C. To exit debut, type '.exit'.
+      1. To debug a file or run debugger, add a 'debugger' statement in your function.
+      2. Call the function manually.
+      3. At the terminal, run `node inspect filename.js`.
+      4. To continue execution of the file, press 'c' then 'enter'.
+      5. To laungh a 'repl' session, type 'repl' and <enter>. You can type variable names or code to debug.
+      6. To exit the 'repl', press control + C. To exit debut, type '.exit'.
 
 ## 1. Reverse a String
 
