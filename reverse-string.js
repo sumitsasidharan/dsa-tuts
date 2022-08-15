@@ -35,8 +35,7 @@ function reverse3(str) {
    let reversed = '';
 
    for (let char of str) {
-      // reversed = char + reversed;
-      reversed = reversed + char;
+      reversed = char + reversed;
    }
    console.log({reversed})
 }
