@@ -23,3 +23,15 @@ Companion repo to [The Coding Inteview Bootcamp: Algorithms + Data Structures](h
       1. Create an empty string called 'reversed'
       2. for each character in the provided string, Take the charcter and add it to the start of 'reversed'
       3. Return the variable 'reversed'
+
+## 8. Capitalize first letter of a string
+
+### Algorithm
+
+      1. Make an empty array 'words'.
+      2. Split the input string by spaces to get an array.
+      3. For each word in the array
+         Uppercase the first letter of the word. (use slice method).
+         Join the first letter with the rest of the string.
+         Push result into 'words' array.
+      4. Finally, join 'words' back into a string and return.
