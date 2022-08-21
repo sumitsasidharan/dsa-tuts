@@ -51,8 +51,8 @@ function buildCharMap(str) {
    return charMap;
 }
 
-// solution
-function anagrams(stringA, stringB) {
+// solution 1
+function anagrams1(stringA, stringB) {
    const charMap1 = buildCharMap(stringA);
    const charMap2 = buildCharMap(stringB);
 
@@ -69,6 +69,17 @@ function anagrams(stringA, stringB) {
    }
 
    return true;
+}
+
+// helper function to remove special characters, spaces and sort a string
+function cleanString(str) {
+   const cleaned = str.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('');
+   return cleaned;
+}
+
+// Solution 2
+function anagrams(stringA, stringB) {
+   return cleanString(stringA) === cleanString(stringB);
 }
 
 console.log({
