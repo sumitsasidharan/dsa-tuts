@@ -15,9 +15,10 @@ class LinkedList {
    }
 
    insertFirst(data) {
-      const node = new Node(data, this.head);
-      this.head = node;
-      // this.head = new Node(data, this.head);
+      this.insertAt(data, 0);
+      // 2) const node = new Node(data, this.head);
+      // this.head = node;
+      // 1) this.head = new Node(data, this.head);
    }
 
    size() {
@@ -33,22 +34,25 @@ class LinkedList {
    }
 
    getFirst() {
-      return this.head;
+      return this.getAt(0);
+      // return this.head;
    }
 
    getLast() {
-      if (!this.head) {
-         return null;
-      }
+      // if (!this.head) {
+      //    return null;
+      // }
 
-      let node = this.head;
-      while (node) {
-         if (!node.next) {
-            return node;
-         }
+      // let node = this.head;
+      // while (node) {
+      //    if (!node.next) {
+      //       return node;
+      //    }
 
-         node = node.next;
-      }
+      //    node = node.next;
+      // }
+
+      return this.getAt(this.size() - 1);
    }
 
    clear() {
